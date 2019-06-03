@@ -37,6 +37,30 @@
 
 const cars = [ 'ford', 'honda', 'bmw', 'merc', 'toyota' ];
 //counts the number of values in the array using length
-for (let i = 0; i < cars.length; i++) {
-	console.log(cars[i]);
+// for (let i = 0; i < cars.length; i++) {
+// 	console.log(cars[i]);
+// }
+
+//FOREACH
+cars.forEach(function(car) {
+	console.log(car);
+});
+
+//MAP
+const users = [ { id: 1, name: 'John' }, { id: 2, name: 'Sara' }, { id: 3, name: 'Karen' } ];
+
+const ids = users.map(function(user) {
+	// return user.id;
+	console.log(user.id);
+});
+
+// FOR IN LOOP
+const user = {
+	firstName: 'Nash',
+	lastName: 'Nziboi',
+	age: 40
+};
+
+for (let x in user) {
+	console.log(`${x} : ${user[x]}`);
 }
